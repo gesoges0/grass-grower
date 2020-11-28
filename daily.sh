@@ -1,3 +1,4 @@
+set -eu
 a=$(date)
 echo $a > hoge.txt
 b=$(sha256sum hoge.txt)
