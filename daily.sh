@@ -5,7 +5,8 @@ echo "date:"$a
 echo $a > $target"/hoge.txt"
 b=$(sha256sum $target/hoge.txt)
 echo "hash:"$b
-c="$a ${b/'$target/hoge.txt'/}"
+target_file=$target/hoge.txt
+c="$a ${b/$target_file/}"
 echo "output:"$c
 echo $c >> $target"/daily.txt"
 cd $target
