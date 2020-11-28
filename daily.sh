@@ -1,5 +1,5 @@
 set -eu
-a=$(date)
+a=$(date "+%Y/%m/%d %H:%M:%S")
 echo $a > hoge.txt
 b=$(sha256sum hoge.txt)
 c="$a ${b/hoge.txt/}"
