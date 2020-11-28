@@ -4,6 +4,6 @@ echo $a > hoge.txt
 b=$(sha256sum hoge.txt)
 c="$a ${b/hoge.txt/}"
 echo $c >> daily.txt
-git add .
+git add "$(pwd)"
 git commit -m "daily commit ($a)"
 git push origin main
