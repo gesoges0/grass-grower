@@ -1,10 +1,15 @@
 set -eu
+target="/home/gesogeso/デスクトップ/grass-grower"
 a=$(date "+%Y/%m/%d %H:%M:%S")
-echo $a > hoge.txt
-b=$(sha256sum hoge.txt)
+echo "date:"$a
+echo $a > $target"/hoge.txt"
+b=$(sha256sum $target/hoge.txt)
+echo "hash:"$b
 c="$a ${b/hoge.txt/}"
-echo $c >> daily.txt
-git add "$(pwd)"
+echo "output:"$c
+echo $c >> $target"/daily.txt"
+cd $target
+git add $target"/*"
 git status
 git commit -m "daily commit ($a)"
 git push origin main
