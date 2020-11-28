@@ -1,5 +1,5 @@
 # grass-grower
 
 ```
-$sh daily.sh
+$bash daily.sh
 ```
