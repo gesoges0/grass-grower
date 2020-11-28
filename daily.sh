@@ -1,4 +1,7 @@
-date >> daily.txt
+a=$(date)
+echo $a >> hoge.txt
+b=$(sha256sum hoge.txt)
+echo $b >> daily.txt
 git add
-git commit -m "daily commit"
-git push origin master
+git commit -m "daily commit ($b)"
+git push origin main
