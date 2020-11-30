@@ -1,8 +1,9 @@
 set -eu
 target="/home/gesogeso/デスクトップ/grass-grower"
-for i in $(seq 1 $(($RANDOM % 10)))
+for i in $(seq 1 $(($RANDOM % 5)))
 do
 	echo $i
+	echo "============================"
 	a=$(date "+%Y/%m/%d %H:%M:%S")
 	echo "date:"$a
 	echo $a > $target"/hoge.txt"
