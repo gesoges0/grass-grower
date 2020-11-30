@@ -1,7 +1,6 @@
 set -eu
 target="/home/gesogeso/デスクトップ/grass-grower"
-echo $RANDOM
-for i in $(($RANDOM % 10))
+for i in $(seq 1 $(($RANDOM % 10)))
 do
 	echo $i;
 	a=$(date "+%Y/%m/%d %H:%M:%S");
