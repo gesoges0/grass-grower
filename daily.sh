@@ -1,6 +1,6 @@
 set -eu
 target="/home/gesogeso/デスクトップ/grass-grower"
-
+echo $RANDOM
 for i in $(($RANDOM % 10))
 do
 	echo $i;
