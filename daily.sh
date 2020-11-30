@@ -14,7 +14,6 @@ do
 	echo $c >> $target"/daily.txt"
 	cd $target
 	git add $target"/*"
-	git status
 	git commit -m "daily commit ($a)"
 done
 git push origin main
