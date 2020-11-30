@@ -3,6 +3,7 @@ target="/home/gesogeso/デスクトップ/grass-grower"
 
 for i in $(($RANDOM % 10))
 do
+	echo $i;
 	a=$(date "+%Y/%m/%d %H:%M:%S");
 	echo "date:"$a;
 	echo $a > $target"/hoge.txt";
