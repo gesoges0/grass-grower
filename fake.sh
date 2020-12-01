@@ -1,5 +1,5 @@
-start="2020-01-01"
-for i in $(seq 1 100)
+start="2019-01-01"
+for i in $(seq 1 300)
 do
 	d=$(date -R -d "${start} + ${i}days")
 	echo $d >> piyo.txt
