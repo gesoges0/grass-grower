@@ -5,5 +5,5 @@ do
 	echo $d >> piyo.txt
 	git add piyo.txt
 	git commit -m "hogehoge"
-	git commit --ammend --date="${d}" -m "daily commit"
+	git commit --ammend --date="${d}" -m "daily commit ${d}"
 done
