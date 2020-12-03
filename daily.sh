@@ -17,4 +17,4 @@ do
 	git add $target"/*"
 	git commit -m "daily commit ($a)"
 done
-git push origin main
+git push origin master
