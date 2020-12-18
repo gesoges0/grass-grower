@@ -1,7 +1,7 @@
 set -eu
 target="/home/gesogeso/デスクトップ/grass-grower"
 pushd ${target}
-	for i in $(seq 2 $(($RANDOM % 5)))
+	for i in $(seq 2 $(($RANDOM % 5 + 2)))
 	do
 		echo $i
 		echo "============================"
